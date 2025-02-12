@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="icon" type="image/x-icon" href="st.ico">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPLASH TRAVEL CLUB- Parque Acuático</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #00aaff, #ffffff);
+            text-align: center;
+            color: #005f9e;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #003366;
+            color: white;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background: #005f9e;
+            padding: 15px 0;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #00aaff;
+        }
+        section {
+            padding: 60px 20px;
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.8);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 250px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background: #003366;
+            color: white;
+            padding: 15px;
+            width: 100%;
+            font-size: 14px;
+        }
+        .contact-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .contact-button:hover {
+            transform: scale(1.1);
+        }
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SPLASH TRAVEL CLUB- Parque Acuático</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#recorrido-virtual">Recorrido 360°</a></li>
+            <li><a href="#precios">Precios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="hero">¡La mejor diversión en el agua!</div>
+    
+    <section id="inicio">
+        <h2>¡Sumérgete en la aventura!🤿</h2>
+        <p>Ven y disfruta de un día lleno de emociones y aventuras acuáticas.</p>
+    </section>
+
+    <section id="recorrido-virtual">
+    <h2>Recorrido Virtual SILAO🎢</h2>
+    <p>Explora nuestro parque acuático desde cualquier lugar con nuestro recorrido virtual interactivo.</p>
+    <div class="recorrido-container">
+        <iframe src="https://gruposplash.com/splashleon/recorrido/index.html" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+
+    <section id="recorrido-virtual">
+    <h2>Recorrido Virtual NUEVO VALLARTA🎢</h2>
+    <p>Explora nuestro parque acuático desde cualquier lugar con nuestro recorrido virtual interactivo.</p>
+    <div class="recorrido-container">
+        <iframe src="https://gruposplash.com/splashvallarta/recorrido/index.html" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+
+
+<section id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <p>En nuestro parque acuático encontrarás todo lo que necesitas para disfrutar de un día increíble.</p>
+    
+    <div class="servicios-container">
+        <div class="servicio">
+            <h3>Restaurantes y Snacks 🧑🏽‍🍳</h3>
+            <p>Disfruta de una gran variedad de alimentos y bebidas en nuestras diferentes áreas gastronómicas.</p>
+        </div>
+
+        <div class="servicio">
+            <h3>Estacionamiento Gratuito 🚗</h3>
+            <p>Contamos con amplio estacionamiento para que tu visita sea más cómoda y segura.</p>
+        </div>
+
+        <div class="servicio">
+            <h3>Áreas VIP y Cabañas 🛖</h3>
+            <p>Reserva una cabaña privada para mayor comodidad y una experiencia exclusiva.</p>
+        </div>
+
+        <div class="servicio">
+            <h3>Renta de Lockers 🔒</h3>
+            <p>Mantén tus pertenencias seguras con nuestro servicio de renta de lockers.</p>
+        </div>
+
+        <div class="servicio">
+            <h3>Tienda de Souvenirs 🏪</h3>
+            <p>Llévate un recuerdo de tu visita con artículos exclusivos del parque.</p>
+        </div>
+    </div>
+</section>
+
+
+   <section id="eventos-especiales">
+        <h2>Eventos Especiales</h2>
+        <p>En SPLASH siempre tenemos algo emocionante para ti. Desde fiestas temáticas hasta competencias acuáticas, cada visita es una nueva aventura. ¡No te lo pierdas!</p>
+    </section>
+        </div>
+    </section>
+    
+    <section id="precios">
+        <h2>Horarios y Precios 🎫🕛</h2>
+        <p>Consulta nuestros horarios y tarifas.</p>
+        <p>Horarios: 9 a.m hasta las 6 p.m.</p>
+        <p>Promociones nuevas todos los dias en hospedaje y parque acuatico.</p>
+    </section>
+    
+    <section id="contacto">
+        <h2>Ubicación y Contacto</h2>
+        <p>Escríbenos para más información.</p>
+        <p>📞 Teléfono: <a href="tel:+5214771926998">+52 1 477 192 6998</a></p>
+        <p>📧 Email: reservacionesgeneradora@gmail.com</p>
+        <a href="https://wa.me/5214771926998" class="whatsapp-button" target="_blank">💬 Contáctanos por WhatsApp</a>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Splash travel club - Todos los derechos reservados.</p>
+    </footer>
+    
+    <a href="https://wa.me/5214771926998" class="contact-button" target="_blank">📞 Contáctanos</a>
+</body>
+</html>
